@@ -1,0 +1,55 @@
+/* Step 2: Page styling */
+body {
+    font-family: Arial, sans-serif;
+}
+/* Step 4: Theme toggle colors */
+:root {
+    --primary-color: #000;
+    --secondary-color: #ffffff;
+    --bg-color: #a1e1ff;
+    --font-color: #fffcfc;
+    --heading-color: #000;
+}
+
+[data-theme="dark"] {
+    --primary-color: #cf3737;
+    --secondary-color: #c65151;
+    --bg-color: #000000;
+    --font-color: #f0f0f0;
+    --heading-color: #464be0;
+}
+
+/* Apply theme colors */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: var(--heading-color); /* Apply heading color */
+}
+
+button {
+    background-color: var(--primary-color); /* Button background color */
+    color: var(--font-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex; /* Flex display for nav items */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;  /* Space between nav items */
+}
+
+nav ul li a {
+    color: var(--secondary-color); /* Apply link color */
+    text-decoration: none;
+}

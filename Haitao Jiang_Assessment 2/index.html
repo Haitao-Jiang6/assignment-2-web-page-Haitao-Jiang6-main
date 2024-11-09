@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First Year at University</title>
+  <link rel="stylesheet" href="styles.css">
+  <link  href="courses.html">
+  <script src="script.js" defer></script> <!-- Step 3, 4, and 5 JavaScript functionalities -->
+</head>
+
+<body onload="loadUserSettings()"> <!-- Step 5: Load user settings on page load -->
+  <header>
+  <h1 id="main-heading">Header - My First Year at University</h1> <!-- Step 5: Dynamic heading update -->
+  <button onclick="toggleTheme()">Toggle Theme</button>
+</header>
+  <nav> 
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="todo.html">To Do List</a></li>
+    </ul>
+    <form action="index.html" method="get">
+      <input type="text" name="user_name" placeholder="Enter You Name !" required>
+      <button type="submit"> Apply!</button>
+    </form>
+    <span id="time"></span>
+  <main>
+    <article>
+      <h2>My First Year at University</h2>
+      <p>My first year of college was full of challenges & growth opportunities...</p> 
+
+      <button onclick="changeImage('campus')">My campus</button>
+
+      <button onclick="changeImage('library')">Library</button>
+      <p>please check the link picture: </p>
+      <a id="image-link" href="https://unisa.edu.au/visit/mawson-lakes-campus/" target="_blank">
+        <img id="display-image" src="https://fastly.4sqi.net/img/general/600x600/29719890_Q_DORXmw07JLrgXEdq07nycrrIQ4ZvpT0lPDDpDmnaU.jpg" alt="Campus Image">
+      </a>
+
+
+      <a id="image-link" href="https://www.library.unisa.edu.au/" target="_blank">
+        <img id= "display-image" src="https://www.phillipspilkington.com.au/images/project-sliders/educational-sliders/the-university-of-south-australia-learning-centre/09367%20Jeffrey%20Smart%20internal%2003%20web.jpg" alt="Library">
+      </a>
+
+  
+      <p id="photoCredit">Campus & library by Google Image Search</p> 
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2024 by Haitao Jiang. All rights reserved.</p>
+  </footer>
+</body>
+</html>
